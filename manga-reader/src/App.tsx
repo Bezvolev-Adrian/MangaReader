@@ -1,11 +1,18 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Button from "@mui/material/Button";
-import BasicButton from "./components/BasicButton";
+import ResponsiveAppBar from "./components/NavBar";
+import RecipeReviewCard from "./components/Card";
+import Box from "@mui/material/Box";
+import CardsContainer from "./components/CardContainer";
 
 function App() {
-  return <BasicButton />;
+  return (
+    <>
+      <ResponsiveAppBar />
+      <CardsContainer />
+    </>
+  );
 }
 
 export default App;
